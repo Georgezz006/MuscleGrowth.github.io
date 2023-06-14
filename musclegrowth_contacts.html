@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="icon" type="image" href="Dumbell_icon.png">
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .container > *
+        {
+            padding: 10px;
+            flex-grow: 1;
+            flex-basis:100% ;
+        }
+        h1
+        {
+            font-size: 2.5rem;
+        }
+        p
+        header
+        {
+            background-color: #d6ccc2;
+        }
+        footer
+        {
+            background-color: #d6ccc2;
+        }
+        aside:nth-child(3)
+        {
+            background-color: gold;
+        }
+        aside:nth-child(4)
+        {
+            background-color: hotpink;
+        }
+        .main
+        {
+            background-color: #edede9;
+            text-align: left;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        th, td
+        {
+            padding: .25em;
+            border: 1px solid black;
+        }
+        @media screen and (min-width: 38rem)
+        {
+            .aside
+            {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 0;
+                /*flex: 1 0 0;*/
+            }
+            h1
+            {
+                font-size: 1.5rem;
+            }
+            p
+            {
+                font-size: 1rem;
+            }
+        }
+        @media screen and (min-width: 50rem)
+        {
+            aside:nth-child(3)
+            {
+                order: 1;
+            }
+            .main
+            {
+                flex-grow: 3;
+                flex-basis: 0;
+                order:2;
+            }
+
+            aside:nth-child(4)
+            {
+                order: 3;
+            }
+            footer
+            {
+                order: 4;
+            }
+            h1
+            {
+                font-size: 1.25rem;
+            }
+            p
+            {
+                font-size: 0.75rem;
+            }
+        }
+        @media screen and (max-width: 37rem)
+        {
+         table, th, td, tr, thead, tbody   
+         {
+            display: block;
+            border: none;
+            text-align: left;
+         }
+         tr 
+         {
+            padding: .5em;
+            border-bottom: 1px solid darkgray;
+         }
+         table
+         {
+            border-top: 1px solid darkgray;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+            <header>
+                <h1>Header</h1>
+            </header>
+            <article class="main">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Trainers</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Adress</th>
+
+                        </tr>
+                    </thead>
+                    <tdata>
+                        <tr>
+                            <th>Trainer 1</th>
+                            <td>Email 1</td>
+                            <td>Phone 1</td>
+                            <td>Adress 1</td>
+
+                        </tr>
+                        <tr>
+                            <th>Trainer 2</th>
+                            <td>Email 2</td>
+                            <td>Phone 2</td>
+                            <td>Adress 2</td>
+
+                        </tr>
+                        <tr>
+                            <th>Trainer 3</th>
+                            <td>Email 3</td>
+                            <td>Phone 2</td>
+                            <td>Adress 3</td>
+
+                        </tr>
+                    </tdata>
+                </table>
+            </article>
+            <footer>
+                <h1>Footer</h1>
+                <a href="Muscle_growth_main.html">Home <img src="home.png" width="20" height="20"></a>
+            </footer>
+    </div>
+</body>
+</html>
+
+

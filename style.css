@@ -1,0 +1,122 @@
+h1
+{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+h2
+{
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+}
+h3
+{
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+p
+{
+    
+    font-family: 'Roboto', sans-serif;
+}
+#container
+{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 1fr 1fr 4rem;
+    height: 100vh;
+}
+
+
+.header, nav, header, footer
+{
+    background-color: #d6ccc2;
+    grid-area: header;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+.header
+{
+    background: #d6ccc2;
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    height: 5rem;
+}
+.nav
+{
+    background: #f5ebe0;
+    grid-area: nav;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section
+{
+    background-color: #edede9;
+    grid-area: section;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aside
+{
+    background-color: #f5ebe0;
+    grid-area: aside;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer
+{
+    background: #d6ccc2;
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 576px)
+{   
+    #container
+    {
+    grid-template-areas: 
+    "header"
+    "section"
+    "aside"
+    "nav"
+    "footer"
+    ;    
+    }
+
+}
+@media screen and (min-width: 576px)
+{
+    #container
+    {
+    grid-template-areas: 
+    "header header"
+    "section section"
+    "nav aside"
+    "footer footer"            
+    ;
+    grid-template-rows: 5rem 1fr 1fr 5rem;
+    grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+@media screen and (min-width: 768px)
+{
+    #container
+    {
+    grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer"            
+    ;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: 2fr 5fr 2fr;
+
+    }
+
+}
